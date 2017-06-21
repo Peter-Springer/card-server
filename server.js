@@ -9,7 +9,6 @@ const api_key = process.env.MAILGUN_API_KEY
 const domain = 'sandbox1270eb3af6a2475b9c240b75d7f762b5.mailgun.org';
 const mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
-
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
